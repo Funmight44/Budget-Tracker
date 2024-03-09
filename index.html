@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker using HTML, CSS and JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="heading">
+            <h3 class="title">Budget tracker</h3>
+            <p class="subtitle">Easy way to track your income and expenses</p>
+        </section>
+        <section class="top">  
+         <div class="trans-detail">
+            <div class="transaction">
+                <h3>Add transaction</h3>
+              <form class="add">
+                <input type="text" placeholder="Source" name="source"> 
+                <input type="number" placeholder="Amount" name="amount"> 
+                <input type="submit" value="Add transaction">
+               </form>
+               <p class="message"></p>
+            </div>
+            <div class="stats">
+                <h3>Statistics</h3>
+                <div class="trans">
+                    <p class="balance">Balance: <span id="balance"></span></p>
+                    <p class="income">Income: <span id="income"></span></p>
+                    <p class="expenses">expenses: <span id="expenses"></span></p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        <section class="top detail">
+            <h2>transaction History</h2> 
+        <div class="income-detail">
+            <div class="Income">
+                <h3>Income</h3>
+                    <ul class="income-list">
+                        <!-- <li data-id="">  we are to generate this through javascript 
+                            <p><Span>marketing</Span> 
+                                <span class="time">28/2/2024</span> 
+                            </p>
+                            <span>#10000</span>
+                            <svg class="delete"><use xlink: href ="image/symbol-defs.svg#icon-bin"></use></svg>
+                        </li> -->
+                    </ul>
+            </div>
+            <div class="expenditure">
+                <h3>Expenses</h3>
+                <ul class="expenditure-list">
+                    <!-- <li data-id="">
+                        <p><Span>Petroluem</Span> 
+                            <span class="time">28/2/2024</span> 
+                        </p>
+                        <span>#4000</span>
+                        <svg class="delete"><use xlink: href ="image/symbol-defs.svg#icon-bin"></use></svg>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

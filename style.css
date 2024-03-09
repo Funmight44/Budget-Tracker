@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    ---box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+}
+
+.container {
+    min-width: 90%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #f3f3ff;
+    padding: 10px;
+}
+
+.top {
+    margin-bottom: 20px;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.detail {
+    background: white;
+    /* min-height: 300px; */
+}
+
+
+
+.heading {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.transaction h3, .stats h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
+    text-decoration: underline 2px solid black;
+}
+
+.trans-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.transaction{
+    background: #fff ;
+    margin:15px 0;
+    flex: 0 0 55%;
+    text-align: center;
+    min-height: 280px;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+    padding: 10px;
+}
+
+.add{
+    padding: 0 10px;
+}
+
+input{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 400px; 
+    border: 1px solid blue;
+    outline: none;
+    border-radius: 5px;
+}
+
+.transaction input[type ="submit"]{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.transaction input[type ="submit"]:hover{
+    background-color:#f5f5f5;
+    color: blue;
+}
+
+.stats {
+    background: #fff ;
+    margin:20px 0;
+    flex:0 0 40%;
+    text-align: center;
+    height: 280px;
+    box-shadow: var(---box-shadow);
+    padding: 10px;
+}
+
+.trans {
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.trans p {
+    text-align: center;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    box-shadow: var(---box-shadow);
+    width: 250px;
+}
+
+.trans p span {
+    font-size: 15px;
+}
+
+
+.income{
+    background-color:lightgrey;
+    border-right: 15px solid blue;
+}
+
+.expenses {
+    
+    background-color:rgb(193, 96, 78);
+    border-right: 15px solid grey;  
+}
+
+.balance {
+    background-color:rgb(224, 225, 221);
+    border-right: 15px solid tomato; 
+}
+
+  .top h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    margin:30px 0 ;
+}
+
+
+.delete {
+    height: 20px;
+    width: 20px;
+    fill: #000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.delete:hover{ 
+    fill: tomato
+}
+
+.income-detail {
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+}
+
+.Income, .expenditure {
+    flex:0 0 45%;
+    padding: 10px;
+}
+
+.Income h3, .expenditure h3 {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline 2px solid black;
+    margin: 10px 0;
+}
+
+.Income ul li, .expenditure ul li {
+    display: flex;
+    background-color:#fff;
+    padding: 10px;
+    box-shadow: var(---box-shadow);
+    min-width: 250px;
+    margin-bottom: 10px;
+}
+
+.Income ul li{
+    border-left: 15px solid blue;
+}
+
+.expenditure ul li{
+    border-left: 15px solid tomato;
+}
+
+
+.Income ul li p, .expenditure ul li p {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.Income ul li span, .expenditure ul li span {
+     margin-right: 10px;
+}
+
+.Income .time, .expenditure .time {
+    font-size: 15px;
+}
+
+
+/* media query */
+
+@media only screen and (max-width:700px){
+    .income-detail {
+        flex-wrap: wrap;
+    }
+
+    .trans-detail {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
