@@ -234,6 +234,17 @@ input{
     .trans-detail {
         flex-wrap: wrap;
     }
+
+    .transaction{
+        flex: 1;
+    }
+
+    .stats{
+        flex: 1;
+    }
+    input{
+        width:300px
+    }
 }
 
 
